@@ -1,0 +1,1207 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@100&display=swap");
+/* font-family: 'Asap', sans-serif;  */
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  align-items: center;
+  list-style: none;
+  font-family: "Noto Sans KR", sans-serif;
+}
+:root {
+  --second-blue: #9fc2e6;
+  --bg-color: #adcffe;
+  --dark-blue: #83a7c2;
+  --darkest-blue: #3e647d;
+  --before-green: #1b3947;
+  --green-color: #204c52;
+  --dark-green: #222c2a;
+  --grey-color: #9a9787;
+
+  --body-font: "Noto Sans KR", sans-serif;
+  --thin-font: "Asap", sans-serif;
+  --poppin-font: "Poppins", sans-serif;
+}
+body {
+  overflow-x: hidden !important  ;
+  max-width: 100%;
+  background-color: var(--bg-color);
+  height: auto;
+  padding: 2% 5%;
+}
+nav {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: var(--bg-color);
+  z-index: 1000;
+}
+.nav-links ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  transition: all 200ms;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0;
+}
+.nav-btns,
+.buy-btns,
+.main-btns {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links ul span {
+  margin-left: 15px;
+}
+.nav-logos {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.nav-logos a,
+.nav-links a,
+.nav-links span,
+.nav-btns a,
+.banner-links a,
+.main-btns a {
+  color: var(--before-green);
+}
+
+.nav-logos a {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+.nav-logos i {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--before-green);
+  vertical-align: start;
+  margin-bottom: 5px;
+}
+.nav-links a,
+.nav-btns a,
+.banner-links a,
+.main-btns a {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.nav-btns a:hover {
+  align-items: center;
+  color: black;
+  background-color: #f4fa9c;
+  padding: 8px 20px;
+  border-radius: 18px;
+  transition: all 200ms;
+}
+.nav-links a:hover {
+  color: black;
+}
+
+/* This is banner section  */
+.banner-links {
+  margin-top: 40px;
+}
+
+.banner-links i {
+  color: var(--before-green);
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.banner {
+  width: 100%;
+  height: auto;
+  background: var(--green-color);
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 31px;
+}
+.banner-left {
+  width: 50%;
+  height: 520px;
+}
+.banner-right {
+  background: url(./img/confident-businessman-working-his-laptop.jpg);
+  width: 50%;
+  height: 520px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  background-size: cover;
+}
+.banner-left h1 {
+  color: var(--bg-color);
+  font-family: var(--thin-font);
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 60px;
+  margin-left: 5%;
+}
+.list {
+  margin-top: 40px;
+}
+.list ul li {
+  list-style: disc;
+  color: var(--bg-color);
+  font-family: var(--body-font);
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 2px 30px;
+  line-height: 2.2em;
+  margin-left: 9%;
+}
+.buyNow {
+  margin-top: 50px;
+  width: inherit;
+  width: 100%;
+  height: 100px;
+}
+.banner-left .btnRow {
+  width: 90%;
+  margin: auto;
+  padding-left: 6%;
+  padding-right: 0%;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+}
+.buyNow .btnRow p {
+  color: var(--bg-color);
+  font-size: 1.3rem;
+}
+.buy-btns,
+.main-btns a {
+  gap: 10px;
+}
+.buy-btns a,
+.main-btns a,
+.promo-btn a {
+  background: var(--bg-color);
+  color: var(--before-green);
+  font-size: 0.9rem;
+  font-weight: 200;
+  align-items: center;
+  padding: 8px 22px;
+  border-radius: 20px;
+  transition: all 200ms;
+}
+.buy-btns a:hover,
+.promo-btn a:hover {
+  background: var(--green-color);
+  color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+  font-size: 0.94rem;
+}
+.lightText {
+  width: 100%;
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  text-align: right !important;
+  padding-right: 4%;
+  color: var(--bg-color);
+  font-family: var(--thin-font);
+}
+.klarna,
+.lightText .klarna {
+  font-size: 1rem;
+  font-family: var(--body-font);
+  font-weight: 400;
+  color: white;
+  margin-left: 3px;
+}
+
+/* This is review section  */
+.review {
+  margin-top: 100px;
+  height: 400px;
+}
+.review h1,
+.left-main h1,
+.right-main h1,
+.curriculum h1 {
+  font-family: var(--thin-font);
+  color: var(--before-green);
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+/* stars */
+.starScore i {
+  margin-top: 15px;
+  color: white;
+  background-color: #03b278;
+  padding: 6px;
+}
+.starScore span i {
+  background: rgb(3, 178, 120);
+  background: linear-gradient(
+    90deg,
+    rgba(3, 178, 120, 1) 50%,
+    rgba(212, 208, 208, 1) 50%
+  );
+}
+
+.review-box .h2 {
+  display: inline-block;
+  font-size: 1.7rem;
+  text-align: center !important;
+  margin-bottom: -10px;
+}
+.review-box:last-child p i {
+  color: #03b278;
+  margin-right: 5px;
+}
+.review p {
+  margin-top: 15px;
+  text-align: center !important;
+}
+.review span {
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+.review-box .fa-circle-check {
+  color: var(--green-color);
+  background: var(--second-blue);
+}
+.review-box span {
+  text-decoration: none;
+}
+.starScore + p {
+  text-align: left !important;
+  padding: 0 0;
+  margin: 0 0;
+  margin-top: 10px;
+  font-weight: 500;
+  font-family: var(--body-font);
+}
+.review-box p:last-child {
+  font-size: 0.9rem;
+  text-align: left !important;
+  font-family: var(--body-font);
+}
+.review-box p:last-child span {
+  font-family: var(--poppin-font);
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+.review-box .trustpilot {
+  color: black;
+  font-family: var(--poppin-font);
+  text-align: center !important;
+}
+.half-star i {
+  background: rgb(3, 178, 120);
+  background: linear-gradient(
+    90deg,
+    rgba(3, 178, 120, 1) 50%,
+    rgba(212, 208, 208, 1) 50%
+  );
+  font-size: 1rem;
+}
+#myCarousel {
+  margin-top: 50px;
+}
+/* card and icon */
+.card a {
+  display: inline-block;
+  font-family: var(--poppin-font);
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin-top: -4px;
+}
+.card {
+  padding: 20px 20px;
+  height: 230px !important;
+  margin-left: 10px !important;
+  background: var(--second-blue) !important;
+  transition: all linear 0ms;
+}
+.carousel-control-prev-icon {
+  position: absolute;
+  left: -30px;
+}
+.carousel-control-next-icon {
+  position: absolute;
+  right: -30px;
+}
+
+/* This is main section  */
+.main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.left-main {
+  flex: 1 1;
+}
+.right-main {
+  flex: 1 1;
+}
+.left-main .course p {
+  margin-bottom: 65px;
+}
+.left-main .work p {
+  margin-bottom: 35px;
+}
+.main-btns a {
+  background-color: var(--green-color);
+  color: var(--bg-color);
+}
+.main-btns a:hover {
+  color: var(--green-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--green-color);
+  font-size: 0.94rem;
+}
+.right-main {
+  vertical-align: top;
+}
+.right-main ul {
+  margin-left: 8px;
+}
+.right-main ul li {
+  line-height: 2.4em;
+  list-style: disc;
+}
+
+/* This is promo section  */
+.promoDiv {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+  background: var(--green-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4%;
+  border-radius: 5px;
+}
+.promoDiv h1 {
+  font-family: var(--thin-font);
+  font-size: 2.8rem;
+  color: var(--bg-color);
+  font-weight: 900;
+}
+.promoDiv span {
+  font-family: var(--body-font);
+  font-size: 2.3rem;
+  color: var(--bg-color);
+  font-weight: 500;
+}
+.promoDiv p {
+  margin-top: 30px;
+  color: var(--bg-color) !important;
+  font-weight: 100;
+}
+.promoDiv a {
+  color: inherit !important;
+  text-decoration: underline !important;
+}
+.promoFooter {
+  margin-top: -20px;
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.promo-btn a {
+  color: var(--before-green) !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+.promo-btn a:hover {
+  color: var(--bg-color) !important;
+}
+.promo-price p,
+.promo-price span {
+  font-family: var(--body-font);
+  color: var(--darkest-blue);
+  text-decoration: line-through !important;
+  font-size: 2.2rem;
+  margin-right: 4px;
+}
+.promo-price p {
+  color: var(--bg-color);
+  font-weight: 400;
+  text-decoration: none !important;
+}
+/* This is accordion section  */
+.curriculum,
+.FAQs {
+  margin-top: 100px;
+}
+#accordion,
+#fqas {
+  margin-top: 30px;
+  width: 100%;
+  padding: 0 0;
+}
+#accordion li,
+#fqas li {
+  list-style: none;
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--before-green);
+}
+#accordion li label,
+#fqas li label {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#accordion label + input[type="radio"],
+#fqas label + input[type="radio"] {
+  display: none;
+}
+#accordion .content,
+#fqas .content {
+  line-height: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+#accordion .content p,
+#fqas .content p {
+  font-family: var(--thin-font);
+  font-weight: bold;
+}
+#accordion label + input[type="radio"]:checked + .content,
+#fqas label + input[type="radio"]:checked + .content {
+  max-height: 400px;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+/* This is contact section  */
+hr {
+  margin-top: 90px;
+}
+
+.contactDiv {
+  padding-top: 30px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.contact-logo a {
+  color: var(--before-green);
+  font-size: 2rem;
+}
+.contactDetails {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.contactDetails a,
+.footerDiv p {
+  font-size: 0.95rem;
+  font-family: var(--thin-font);
+  color: var(--font-color);
+  font-weight: 600;
+  line-height: 1.9em;
+}
+.contactDetails a:hover {
+  font-size: 0.97rem;
+  color: var(--yellow);
+  transition: all 100ms;
+}
+.contactDetails i {
+  color: var(--font-color);
+  font-size: 1rem;
+}
+.contact-icons {
+  max-width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 8px;
+  margin-left: 24px;
+}
+
+.lastHr {
+  margin: 0 0;
+  margin-top: 70px;
+}
+
+.footerDiv {
+  padding: 45px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+.footerDiv i {
+  color: var(--font-color);
+  margin-right: 5px;
+}
+.footerDiv span {
+  font-family: var(--poppin-font);
+}
+
+.message-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  box-shadow: 1px 1px 2px black;
+  position: fixed;
+  bottom: 10px;
+  right: 33px;
+  line-height: 40px;
+  text-align: center;
+}
+.message-circle i {
+  width: 22px;
+  color: rgba(0, 0, 0, 0.858);
+  margin: 0 0;
+}
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+.bars {
+  display: none;
+}
+/************************************************************************************************************************************* MQ  **********************************************************************/
+
+/* FROM PC TO PHONE */
+@media screen and (max-width: 1162px) {
+  .banner {
+    height: 580px;
+    padding: 0 0;
+  }
+  .banner-left {
+    padding-top: 0px;
+    height: 100%;
+  }
+  .banner-right {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1012px) {
+  .nav-logos a {
+    font-size: 1.25rem;
+  }
+  .nav-links ul {
+    align-items: center;
+    padding: 0 0;
+    gap: 10px;
+  }
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .nav-btns a {
+    font-size: 0.85rem;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    height: 1000px;
+  }
+  .banner-right,
+  .banner-left {
+    width: 100%;
+  }
+  .column {
+    width: 32% !important;
+  }
+  .review {
+    margin-top: 100px;
+  }
+  .a .card {
+    width: 240px !important;
+    padding: 0px;
+    padding-top: 35px;
+    margin-right: 15px !important;
+  }
+  .starScore span {
+    display: block;
+  }
+  .card {
+    width: 240px !important;
+    height: 280px !important;
+    padding: 5px 20px;
+  }
+  .ss span {
+    display: inline-block !important;
+  }
+  .reviewa {
+    font-size: 0.8rem !important;
+  }
+  .main {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .review h1,
+  .left-main h1,
+  .right-main h1,
+  .curriculum h1,
+  .FAQs h1,
+  .promoDiv h1,
+  .promoDiv span {
+    font-size: 2.17rem;
+  }
+}
+@media screen and (max-width: 884px) {
+  body {
+    max-width: 100% !important;
+    padding: 0 5% !important;
+  }
+  .nav-links ul {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .nav-links li a {
+    color: var(--before-green) !important;
+    font-weight: 400;
+  }
+  .nav-links li a:hover {
+    color: black !important;
+    font-weight: 600;
+  }
+  .nav-links li {
+    background: var(--bg-color);
+    padding: 5px 0;
+    border-radius: 5px;
+    width: 100% !important;
+  }
+  .nav-links span {
+    display: none;
+  }
+  .show {
+    display: block !important;
+    position: absolute !important;
+    top: 80px !important;
+    right: 0px;
+    background: #1b394789;
+    border-radius: 5px;
+    width: 100% !important;
+    padding: 15px;
+    text-align: center;
+  }
+  nav {
+    top: -1px;
+    padding: 0 3%;
+  }
+  .nav-links,
+  .nav-btns {
+    display: none;
+  }
+  .bars {
+    display: block;
+    height: fit-content;
+    line-height: 5em;
+  }
+  .bars i {
+    font-size: 1.4rem;
+    margin-right: 16px;
+    color: var(--before-green) !important;
+    font-weight: 0;
+  }
+  body {
+    padding: 0 5%;
+  }
+  .nav-logos a {
+    font-size: 1.3rem;
+  }
+  .nav-links ul {
+    padding: 0 0;
+    margin: 0 0;
+    gap: 12px;
+    font-size: 0.89rem;
+  }
+  .nav-links ul span {
+    margin-left: 10px;
+  }
+  .nav-btns {
+    gap: 15px;
+  }
+  .banner-links i {
+    color: var(--before-green);
+    margin-left: 5px;
+  }
+  .banner-links a {
+    margin-left: 5px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-right,
+  .banner-left {
+    width: 100%;
+  }
+  #myCarouselcar {
+    scroll-behavior: smooth;
+    transition: all 500ms;
+  }
+  .column {
+    width: 35% !important;
+  }
+  .a .card {
+    width: 230px !important;
+    padding: 0px;
+    padding-top: 35px;
+    margin-right: 150px !important;
+  }
+  .starScore span {
+    display: block;
+  }
+  .card {
+    width: 240px !important;
+    height: 280px !important;
+    padding: 5px 20px;
+  }
+  .ss span {
+    display: inline-block !important;
+  }
+  .reviewa {
+    font-size: 0.8rem !important;
+  }
+  .review h1,
+  .left-main h1,
+  .right-main h1,
+  .curriculum h1 {
+    font-size: 2rem;
+  }
+  .main p {
+    font-size: 0.98rem;
+    line-height: 2em;
+    margin-bottom: 10px;
+  }
+  .right-main li {
+    font-size: 0.96rem;
+    line-height: 3em;
+  }
+  .main-btns {
+    gap: 20px;
+  }
+  .promoDiv {
+    padding: 5%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .column {
+    width: 37% !important;
+  }
+}
+@media (max-width: 768px) {
+  #myCarouselcar {
+    scroll-behavior: smooth;
+  }
+  .column {
+    width: 43% !important;
+  }
+  .a .card {
+    margin-right: 0px !important;
+  }
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-item-next:not(.carousel-item-start) {
+    transform: translateX(25%) !important;
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-item-prev:not(.carousel-item-end),
+  .active.carousel-item-start,
+  .carousel-item-prev:not(.carousel-item-end) {
+    transform: translateX(-25%) !important;
+  }
+
+  .carousel-item-next.carousel-item-start,
+  .active.carousel-item-end {
+    transform: translateX(0) !important;
+  }
+
+  .carousel-inner .carousel-item-prev,
+  .carousel-item-prev:not(.carousel-item-end) {
+    transform: translateX(-25%) !important;
+  }
+}
+@media (max-width: 655px) {
+  #myCarouselcar {
+    scroll-behavior: smooth;
+  }
+  .column {
+    width: 49% !important;
+  }
+  .banner-left {
+    margin-top: -30px !important;
+  }
+  .banner-left h1 {
+    margin-top: 28px !important;
+  }
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+  .review h1,
+  .left-main h1,
+  .right-main h1,
+  .curriculum h1,
+  .FAQs h1,
+  .promoDiv h1,
+  .promoDiv span {
+    font-size: 1.9rem !important;
+  }
+}
+@media (max-width: 570px) {
+  #myCarouselcar {
+    scroll-behavior: smooth;
+  }
+  .column {
+    width: 58% !important;
+  }
+  #myCarouselcar {
+    scroll-behavior: smooth;
+    transition: all 500ms;
+  }
+  .a .card {
+    width: 230px !important;
+    height: 240px !important;
+  }
+  .starScore span {
+    display: block;
+  }
+  .card {
+    width: 240px !important;
+    height: 240px !important;
+    padding: 20px;
+  }
+  /* stars */
+  .starScore i {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: white;
+    background-color: #03b278;
+    padding: 4px;
+  }
+
+  .review-box p {
+    font-size: 0.8rem !important;
+  }
+  .review-box span {
+    font-size: 0.7rem !important;
+    margin-left: 3px;
+  }
+  .review-box .h2 {
+    font-size: 1.28rem !important;
+    margin-top: 0px;
+    margin-bottom: 12px !important;
+  }
+  .ss span {
+    display: inline-block !important;
+  }
+  .reviewa {
+    font-size: 0.8rem !important;
+  }
+  .review h1,
+  .left-main h1,
+  .right-main h1,
+  .curriculum h1,
+  .FAQs h1,
+  .promoDiv h1,
+  .promoDiv span {
+    font-size: 1.8rem;
+  }
+  .banner-left li {
+    font-size: 0.98rem !important;
+    line-height: 2.2em !important;
+  }
+  .buyNow {
+    margin-top: 0px;
+  }
+  .main p,
+  .main li {
+    font-size: 0.94rem !important;
+  }
+  .promoDiv a,
+  .promoDiv p {
+    font-size: 0.93rem;
+  }
+  .curriculum,
+  .FAQs {
+    margin-top: 100px;
+  }
+  .curriculum p,
+  .FAQs p {
+    font-size: 0.9rem;
+  }
+  .curriculum label,
+  .FAQs label {
+    font-size: 0.927rem !important;
+  }
+  .contactDetails {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contactDetails a {
+    font-size: 0.9rem;
+  }
+  .footerDiv p {
+    font-size: 0.9rem;
+  }
+  .buy-btns a,
+  .main-btns a,
+  .promo-btn a {
+    padding: 8px 17px;
+    font-size: 0.8rem;
+  }
+  .buy-btns a:hover,
+  .main-btns a:hover,
+  .promo-btn a:hover {
+    font-size: 0.8rem;
+  }
+  .lightText {
+    margin-top: 0px;
+    font-size: 0.85rem;
+  }
+  .klarna {
+    font-size: 1rem !important;
+  }
+  .money p {
+    font-size: 1.1rem !important;
+    padding-top: 18px;
+    padding-right: 20px;
+  }
+  .promo-price span,
+  .promo-price p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 553px) {
+  .banner-left h1 {
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+  .banner-left .list li {
+    font-size: 0.98rem;
+    line-height: 1.8em;
+    margin-bottom: 8px;
+  }
+  .buyNow {
+    margin-top: 30px;
+  }
+  .buy-btns a,
+  .main-btns a,
+  .promo-btn a {
+    padding: 7px 15px;
+    font-size: 0.8rem;
+    transition: all 300ms;
+  }
+  .buy-btns a:hover,
+  .main-btns a:hover,
+  .promo-btn a:hover {
+    font-size: 0.85rem;
+  }
+  .footerDiv p {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .column {
+    width: 68% !important;
+  }
+  .footerDiv {
+    flex-direction: column;
+  }
+}
+@media (max-width: 382px) {
+  .column {
+    width: 75% !important;
+  }
+  .banner-left li {
+    line-height: 1.8em !important;
+    font-size: 0.9rem !important;
+  }
+}
+@media (max-width: 360px) {
+  body {
+    padding: 0 2%;
+  }
+  .nav-logos a {
+    font-size: 1.1rem;
+  }
+  .banner-links a {
+    font-size: 0.7rem;
+  }
+  .banner {
+    background-color: var(--bg-color);
+    height: 890px;
+  }
+  .banner-left {
+    background: var(--before-green);
+    padding: 0 0;
+    height: 550px;
+    border-radius: 15px;
+  }
+  .banner-left h1 {
+    font-size: 1.6rem;
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+  .banner-left .list li {
+    line-height: 1.7em;
+    margin-bottom: 8px;
+  }
+  .buyNow {
+    margin-top: 0px;
+  }
+  .btnRow {
+    width: 100% !important;
+    padding: 0 0;
+  }
+  .buy-btns a,
+  .main-btns a,
+  .promo-btn a {
+    padding: 7px 15px;
+    font-size: 0.7rem;
+  }
+  .buy-btns a:hover,
+  .main-btns a:hover,
+  .promo-btn a:hover {
+    font-size: 0.7rem;
+  }
+  .money p {
+    font-size: 1rem !important;
+    padding-top: 18px;
+    padding-right: 20px;
+  }
+  .banner-right {
+    height: 300px;
+    border-radius: 15px;
+  }
+  .review h1 {
+    margin-top: 50px;
+  }
+  .review h1,
+  .left-main h1,
+  .right-main h1,
+  .curriculum h1,
+  .FAQs h1,
+  .promoDiv h1,
+  .promoDiv span {
+    font-size: 1.6rem;
+  }
+  .review {
+    margin: 12px !important;
+  }
+  .starScore span {
+    display: block;
+  }
+  .ss span {
+    display: inline-block;
+  }
+  .reviewa {
+    margin-top: -10px !important;
+    font-size: 0.8rem !important;
+  }
+  .main {
+    flex-direction: column;
+    padding: 0 3%;
+  }
+  .main p,
+  .main li {
+    font-size: 0.8rem;
+    margin-top: -10px;
+  }
+  #myCarouselcar {
+    scroll-behavior: smooth;
+    transition: all 500ms;
+  }
+  .column {
+    width: 100% !important;
+  }
+  .promoDiv {
+    padding: 30px;
+    padding-bottom: 10px;
+  }
+  .promoDiv > p {
+    font-size: 0.89rem;
+  }
+  .lightText {
+    margin-top: 0px;
+    font-size: 0.79rem;
+  }
+  .klarna {
+    font-size: 0.89rem !important;
+  }
+  .promo-price p,
+  .promo-price span {
+    font-size: 1.5rem !important;
+  }
+  .curriculum,
+  .FAQs {
+    padding: 5%;
+  }
+  .curriculum i,
+  .FAQs i {
+    font-size: 0.85em;
+  }
+  .curriculum label,
+  .FAQs label {
+    font-size: 0.85em;
+    font-family: --;
+  }
+  .curriculum .content,
+  .FAQs .content {
+    font-size: 0.85em;
+  }
+  .contactDetails {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .contactDetails .detail {
+    flex-basis: 100%;
+  }
+  .detail a {
+    font-size: 0.9rem;
+  }
+  .footerDiv {
+    flex-direction: column;
+  }
+  hr {
+    margin-top: 30px;
+  }
+  .lastHr {
+    margin-top: 40px;
+  }
+}

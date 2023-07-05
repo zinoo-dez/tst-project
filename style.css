@@ -1,0 +1,1426 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@100&display=swap");
+/* font-family: 'Asap', sans-serif;  */
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  align-items: center;
+  list-style: none;
+  font-family: "Noto Sans KR", sans-serif;
+}
+:root {
+  --yellow: #f4fa9c;
+  --bg-color: #1f4c51;
+  --font-color: #b5f5d1;
+  --body-font: "Noto Sans KR", sans-serif;
+  --thin-font: "Asap", sans-serif;
+  --poppin-font: "Poppins", sans-serif;
+}
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  background-color: #1f4c51;
+  height: auto;
+}
+nav {
+  padding: 5px 5%;
+  padding-right: 6%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: var(--bg-color);
+  z-index: 1000;
+}
+.nav-links ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  transition: all 200ms;
+}
+.nav-btns {
+  display: flex;
+  gap: 50px;
+}
+.nav-links ul span {
+  margin-left: 15px;
+}
+.nav-logos {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.nav-logos a,
+.nav-links a,
+.nav-links span,
+.nav-btns a {
+  color: var(--font-color);
+}
+.nav-logos a {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+.nav-logos i,
+.contact-logo i {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--font-color);
+  vertical-align: start;
+  margin-bottom: 25px;
+}
+.nav-links,
+.nav-btns a {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.nav-btns a:hover,
+.banner-btn a:hover,
+.kn-btn a {
+  align-items: center;
+  color: green;
+  background-color: #f4fa9c;
+  padding: 8px 20px;
+  border-radius: 18px;
+  transition: all 200ms;
+}
+.nav-links a:hover {
+  color: var(--yellow);
+}
+.ribbon {
+  width: 28px;
+  height: 38px;
+  background: #f4fa9c;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  text-align: center;
+  line-height: 35px;
+  color: #1f4c51;
+  box-shadow: 2px 3px 5px #1f4c51;
+}
+.bars {
+  display: none;
+}
+/* This is banner section  */
+.banner {
+  margin: auto;
+  width: 90%;
+  height: 400px;
+  background-image: url(./img/bannerbg.jpg);
+  background-repeat: none;
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+.message-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  box-shadow: 1px 1px 2px black;
+  position: absolute;
+  top: 500px;
+  right: 33px;
+  line-height: 40px;
+  text-align: center;
+}
+.message-circle i {
+  width: 22px;
+  color: rgba(0, 0, 0, 0.858);
+  margin: 0 0;
+}
+.banner-text h3 {
+  color: var(--font-color);
+  font-family: var(--thin-font);
+  font-weight: 900;
+  font-size: 2rem;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0),
+    0px 0px 15px rgb(0, 0, 0), 0px 0px 20px rgb(1, 1, 1),
+    0px 0px 30px rgb(0, 0, 0), 0px 0px 40px rgb(7, 7, 7),
+    0px 0px 55px rgb(0, 0, 0), 0px 0px 75px rgb(0, 0, 0);
+}
+.banner-btn a,
+.buy-btns a,
+.promo-btn a,
+.kn-btn a,
+.story-btn a,
+.signUp-btn a {
+  align-items: center;
+  font-size: var(--thin-font);
+  font-weight: 0;
+  background-color: var(--bg-color);
+  color: rgb(255, 255, 255);
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 200ms;
+  font-family: var(--body-font);
+  font-size: 0.92rem;
+  font-weight: 300;
+}
+.banner-btn a,
+.kn-btn a {
+  color: var(--bg-color);
+  background-color: var(--yellow);
+}
+.banner-btn a:hover,
+.kn-btn a:hover {
+  background-color: var(--bg-color);
+  color: rgb(255, 255, 255);
+}
+.kn-btn a:hover {
+  border: white 1px solid;
+}
+/* This is popular courses section  */
+.popular-courses {
+  margin-top: 120px;
+}
+.course-title {
+  padding-left: 5%;
+  margin-top: 30px;
+}
+.course-title h1,
+.industryLeading-courses .ilc-title h1,
+.studentStoryTitle h1 {
+  font-family: var(--body-font);
+  font-weight: 400;
+  color: white;
+  font-size: 2.2rem;
+}
+.course-title p,
+.industryLeading-courses .ilc-title p,
+.line-box p,
+.studentStoryTitle p {
+  font-family: var(--thin-font);
+  color: var(--font-color);
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 15px;
+}
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 50px;
+}
+.firstCard,
+.secondCard {
+  background-image: url(./img/man1.jpg);
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-size: contain;
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  border-radius: 5px;
+  margin-top: 0px;
+}
+.secondCard {
+  background-image: url(./img/man2.jpg);
+}
+.cardText {
+  flex: 0.7;
+  text-align: center;
+  margin: auto;
+  padding-top: 120px;
+}
+.cardText p {
+  font-size: 0.8rem;
+  font-family: var(--thin-font);
+  color: white;
+  font-weight: 900;
+  margin-top: 12px;
+}
+.cardText .title,
+.cardText:last-child {
+  font-family: var(--body-font);
+  font-weight: 400;
+  color: var(--font-color);
+  font-size: 2rem;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0), 0px 0px 10px rgba(247, 245, 245, 0.398),
+    0px 0px 15px rgb(95, 95, 95), 0px 0px 20px rgba(231, 231, 231, 0.268),
+    0px 0px 30px rgba(0, 0, 0, 0.359), 0px 0px 40px rgb(0, 0, 0),
+    0px 0px 55px rgb(0, 0, 0), 0px 0px 75px rgba(220, 220, 220, 0.498);
+}
+.buyNow {
+  background: var(--font-color);
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 13px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.buyNow p {
+  font-size: 0.8rem;
+}
+.buyNow .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+.buyNow .row span {
+  color: var(--bg-color);
+}
+.buy-btns a,
+.promo-btn a,
+.story-btn a,
+.signUp-btn a {
+  background: var(--bg-color);
+  color: var(--font-color);
+  border: 1px solid var(--bg-color);
+  font-size: 0.89rem;
+  font-weight: 200;
+  margin-left: 10px;
+}
+
+.buy-btns a:hover,
+.promo-btn a:hover,
+.story-btn a:hover,
+.signUp-btn a:hover {
+  background: var(--font-color);
+  color: var(--bg-color);
+  font-weight: 400;
+  transition: 1ms;
+}
+.buyNow p,
+.klarna {
+  width: 100%;
+  text-align: right;
+  margin-top: 10px;
+  padding-right: 10%;
+  color: var(--bg-color);
+}
+.buyNow p span,
+.klarna span {
+  font-family: var(--body-font);
+  font-weight: 900;
+  font-size: larger;
+  margin-left: 2px;
+  color: black;
+}
+/* This is promo div section  */
+.promo-div {
+  margin: 65px;
+  margin-top: 130px;
+  display: flex;
+  height: 530px;
+  border-radius: 15px;
+}
+.promoTitle {
+  flex: 1;
+  height: 100%;
+  background-image: url(./img/promoimg.jpg), linear-gradient(black, grey);
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.promoTitle .mainText {
+  font-size: 5rem;
+  line-height: 1.2em;
+  text-align: center;
+  color: var(--yellow);
+  font-family: var(--thin-font);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.625), 0px 0px 4px rgba(0, 0, 0, 0.39);
+}
+.promoTitle .smallText {
+  color: var(--yellow);
+  font-family: var(--thin-font);
+  margin-top: 30px;
+  font-size: 0.9rem;
+  font-weight: 0;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0),
+    0px 0px 15px rgb(0, 0, 0), 0px 0px 20px rgb(1, 1, 1),
+    0px 0px 30px rgb(0, 0, 0), 0px 0px 40px rgb(7, 7, 7),
+    0px 0px 55px rgb(0, 0, 0), 0px 0px 75px rgb(0, 0, 0);
+}
+.preciseDetail {
+  flex-basis: 31%;
+  height: 100%;
+  background: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 40px;
+  padding-top: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.preciseText p span {
+  text-decoration: line-through;
+  color: rgba(82, 81, 81, 0.542);
+  margin-right: 15px;
+}
+.preciseText p {
+  color: var(--bg-color);
+  margin-bottom: 30px;
+}
+.preciseText .bundle {
+  margin-bottom: 18px;
+}
+.preciseText ul li {
+  list-style: disc;
+  color: #024f35;
+  font-size: 0.9rem;
+  margin: 2px 30px;
+}
+.otherPart {
+  padding: 0 0;
+  width: 100%;
+  margin-top: 12px;
+}
+.trustpilot-div i {
+  color: #03b278;
+  margin-right: 5px;
+}
+.trustpilot-div p {
+  color: black;
+  font-family: var(--poppin-font);
+  font-weight: 900;
+}
+.starScore i {
+  margin-top: 17px;
+  color: white;
+  background-color: #03b278;
+  padding: 5px;
+}
+.starScore span i {
+  background: rgb(3, 178, 120);
+  background: linear-gradient(
+    90deg,
+    rgba(3, 178, 120, 1) 50%,
+    rgba(212, 208, 208, 1) 50%
+  );
+}
+.trustpilot-div .review {
+  font-size: 0.7rem;
+  font-family: var(--body-font);
+  font-weight: normal;
+  margin-top: 8px;
+}
+.trustpilot-div .review span {
+  font-weight: 800;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.promo-btn a,
+.signUp-btn a {
+  display: inline-block;
+  margin-top: 28px;
+  color: var(--yellow);
+  background: var(--bg-color);
+  font-weight: 200;
+  margin-left: -3px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.promo-btn a:hover,
+.signUp-btn a:hover {
+  background: var(--yellow) !important;
+  color: var(--bg-color);
+  font-weight: 400;
+  padding: 7px 20px;
+}
+.klarna {
+  font-size: 0.8rem;
+  width: 100%;
+  text-align: left;
+}
+.promoSection {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.seeAll {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+}
+.seeAll a,
+.moreStory a {
+  color: var(--font-color);
+  font-size: 0.9rem;
+  font-family: var(--thin-font);
+  font-weight: 100;
+}
+.seeAll i,
+.moreStory i {
+  margin-left: 5px;
+  color: var(--font-color);
+}
+.seeAll a:hover,
+.seeAll i:hover,
+.moreStory a:hover,
+.moreStory i:hover,
+.contactDetails a:hover {
+  color: var(--yellow);
+  transform: scale(1.2);
+}
+
+/* Industry-leading courses section  */
+.industryLeading-courses {
+  width: 100%;
+  margin: 10%;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+.industryLeading-courses .ilc-title {
+  padding: 5%;
+}
+.kn-btn a {
+  display: inline-block;
+  margin-top: 40px;
+}
+.ilc-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ilc-details .line-box {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+}
+.line-box img {
+  margin: auto;
+}
+.line-box {
+  margin-top: 80px;
+}
+.ilc-details {
+  margin-top: -90px;
+}
+.line-box .fa-solid {
+  display: block;
+}
+.line-box p {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  line-height: 1.8em;
+  width: 60%;
+  text-align: left;
+}
+/*  This is student stories section  */
+
+.studentStoriesDiv {
+  margin-top: 80px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.storyDiv {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.storyDiv .story {
+  padding: 60px;
+  padding-top: 55px;
+  background: var(--font-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.story img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.story .name {
+  margin-top: 7px;
+}
+.story h4 {
+  color: var(--bg-color);
+  font-family: var(--thin-font);
+  font-weight: 700;
+  font-size: 1.09rem;
+  margin-top: 2px;
+}
+.story p,
+i {
+  margin-top: 30px;
+  line-height: 2em;
+  text-align: center;
+  font-family: var(--thin-font);
+  color: var(--bg-color);
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+.story i {
+  line-height: 1.6rem;
+  font-size: 0.92rem;
+}
+.story-btn {
+  margin-top: 40px;
+}
+
+.startJourneyDiv {
+  width: 90%;
+  height: 460px;
+  margin: auto;
+  margin-top: 60px;
+  background: var(--yellow);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.startJourneyDiv p {
+  color: var(--bg-color);
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 4.9rem;
+  margin-bottom: 20px;
+}
+.startJourneyDiv span {
+  font-family: var(--poppin-font);
+  color: var(--bg-color);
+  font-weight: 600;
+  display: inline-block;
+  font-size: 1rem;
+}
+.signUp-btn {
+  margin-top: 30px;
+}
+hr {
+  margin-top: 90px;
+}
+
+.contactDiv {
+  padding-top: 30px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.contactDetails {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.contactDetails a,
+.footerDiv p {
+  font-size: 0.95rem;
+  font-family: var(--thin-font);
+  color: var(--font-color);
+  font-weight: 580;
+  line-height: 1.9em;
+}
+.contactDetails a:hover {
+  font-size: 0.97rem;
+  color: var(--yellow);
+  transition: all 100ms;
+}
+.contactDetails i {
+  color: var(--font-color);
+  font-size: 1rem;
+}
+.contact-icons {
+  max-width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 8px;
+}
+
+.lastHr {
+  margin: 0 0;
+  margin-top: 70px;
+}
+
+.footerDiv {
+  padding: 45px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+.footerDiv i {
+  color: var(--font-color);
+  margin-right: 5px;
+}
+.footerDiv span {
+  font-family: var(--poppin-font);
+}
+
+/************************************************************************************************************************************* MQ  **********************************************************************/
+
+/* FROM PC TO PHONE */
+@media screen and (max-width: 1241px) {
+  .promo-div {
+    height: 535px;
+  }
+  .preciseDetail {
+    padding-top: 30px;
+  }
+  .storyDiv .story {
+    padding: 50px 25px;
+  }
+  .promoTitle .mainText {
+    font-size: 4.4rem;
+  }
+  .startJourneyDiv {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1104px) {
+  nav {
+    padding: 5px 5%;
+    white-space: nowrap;
+  }
+  .nav-logos a {
+    font-size: 1.2rem;
+  }
+  .nav-links a {
+    font-weight: 0;
+    font-size: 0.8rem;
+  }
+  .nav-btns {
+    gap: 13px;
+  }
+  .nav-btns a {
+    font-family: var(--body-font);
+    letter-spacing: 0.5px;
+  }
+  .nav-links ul span {
+    margin-left: 10px;
+  }
+  .message-circle {
+    top: 500px;
+    right: 20px;
+    line-height: 40px;
+  }
+  .ribbon {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+  }
+  .card {
+    padding: 5%;
+    width: 100%;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  .firstCard,
+  .secondCard {
+    height: 360px;
+    width: 50%;
+    gap: 50px;
+  }
+  .cardText .title,
+  .cardText:last-child {
+    font-size: 1.5rem;
+  }
+  .cardText p {
+    font-size: 0.6rem;
+    font-weight: 700;
+  }
+  /*btns */
+  .nav-btns a,
+  .banner-btn a,
+  .buy-btns a,
+  .promo-btn a,
+  .story-btn a,
+  .signUp-btn a,
+  .kn-btn a {
+    font-size: 0.8rem;
+    font-weight: 200;
+    padding: 7px 15px;
+  }
+
+  .promo-div {
+    width: 90%;
+    margin: 65px;
+    margin-top: 60px;
+    display: flex;
+    height: 530px;
+    border-radius: 15px;
+  }
+
+  .promoTitle .mainText {
+    font-size: 4rem;
+    padding: 0;
+  }
+  .preciseDetail {
+    flex-basis: 35%;
+    padding-left: 26px;
+    gap: 5px;
+    padding-top: 27px;
+  }
+  .storyDiv {
+    gap: 20px;
+  }
+  .storyDiv .story {
+    padding: 40px 25px;
+  }
+
+  .startJourneyDiv {
+    height: 400px;
+  }
+  .startJourneyDiv p {
+    margin-top: 60px;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 920px) {
+  .nav-links ul {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .nav-links li a {
+    color: white !important;
+    font-weight: 400;
+  }
+  .nav-links li a:hover {
+    color: var(--yellow) !important;
+    font-weight: 500;
+  }
+  .nav-links li {
+    background: var(--bg-color);
+    padding: 4px 0;
+    border-radius: 5px;
+    border: 1px solid var(--bg-color);
+    width: 100% !important;
+  }
+  .nav-links span {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+  .show {
+    display: block !important;
+    position: absolute !important;
+    top: 90px !important;
+    right: 5%;
+    background: var(--font-color);
+    border-radius: 5px;
+    width: 50% !important;
+    padding: 15px;
+    text-align: center;
+  }
+  nav {
+    top: -1px;
+    padding: 0 3%;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-btns {
+    display: none;
+  }
+  .bars {
+    display: block;
+    height: fit-content;
+    line-height: 5em;
+  }
+  .bars i {
+    font-size: 1.4rem;
+    margin-right: 16px;
+    color: var(--font-color) !important;
+    font-weight: 0;
+  }
+  .banner-text h3 {
+    font-size: 1.7rem;
+    font-weight: 800;
+  }
+  .banner-btn a {
+    font-weight: 400;
+  }
+
+  .promoSection {
+    margin-top: 20px;
+    gap: 100px;
+  }
+  .promo-div {
+    flex-direction: column;
+  }
+  .promoTitle {
+    width: 100%;
+    padding: 60px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .promoTitle .mainText {
+    font-size: 3rem;
+  }
+  .preciseDetail {
+    margin: 0 0;
+    padding: 30px;
+    padding-bottom: 50px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 0px;
+  }
+  .otherPart {
+    flex-basis: 40%;
+  }
+  .ilc-details {
+    flex-wrap: wrap;
+  }
+  .ilc-details .line-box {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .storyDiv {
+    flex-wrap: wrap;
+    gap: 70px;
+  }
+  .storyDiv .story {
+    padding: 70px;
+    padding-top: 55px;
+  }
+  .contactDetails {
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: auto;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .detail {
+    flex: 40%;
+  }
+  .footerDiv {
+    padding: 45px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+  }
+  .footerDiv p:last-child {
+    padding-top: 3%;
+  }
+}
+@media screen and (max-width: 880px) {
+  .card {
+    width: 100%;
+    height: 1000px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .firstCard,
+  .secondCard {
+    height: 380px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+}
+@media screen and (max-width: 766px) {
+  .promo-btn {
+    white-space: nowrap;
+  }
+  /*btns */
+  .nav-btns a,
+  .banner-btn a,
+  .buy-btns a,
+  .promo-btn a,
+  .story-btn a,
+  .signUp-btn a,
+  .kn-btn a {
+    font-size: 0.69rem;
+    font-weight: 200;
+    padding: 5px 10px;
+  }
+  .detail p,
+  .footerDiv p {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 680px) {
+  .banner-text h3 {
+    font-size: 1.4rem;
+  }
+  .card {
+    height: 900px;
+  }
+  .firstCard,
+  .secondCard {
+    height: 360px;
+    width: 70%;
+  }
+  .cardText {
+    flex: 1;
+    padding-top: 120px;
+  }
+  .cardText p {
+    margin-top: 10px;
+  }
+  .cardText .title,
+  .cardText:last-child {
+    font-size: 1.3rem;
+  }
+  .promoSection {
+    gap: 200px;
+  }
+  .preciseDetail .otherPart {
+    flex: 400px;
+  }
+  .klarna {
+    max-width: 350px;
+    padding: 0 0;
+  }
+  .preciseText p {
+    margin-bottom: 20px;
+  }
+  .preciseText .bundle {
+    margin-bottom: 15px;
+  }
+  .preciseText ul li {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+  .detail p,
+  .footerDiv p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  nav {
+    padding: 0 5%;
+    margin: 0 0;
+    position: sticky;
+    height: 80px;
+  }
+  .nav-logos a {
+    font-size: 0.9rem;
+  }
+  .contact-logo i {
+    font-size: 1.5rem;
+  }
+  .banner {
+    padding: 4%;
+    width: 93%;
+  }
+  .banner-text h3 {
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    text-align: center;
+  }
+  .message-circle {
+    right: 3px;
+    top: 480px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .course-title h1,
+  .industryLeading-courses .ilc-title h1,
+  .studentStoryTitle h1 {
+    font-size: 1.5rem;
+  }
+  .course-title p,
+  .industryLeading-courses .ilc-title p,
+  .line-box p,
+  .studentStoryTitle p {
+    font-size: 0.75rem;
+  }
+  .card {
+    height: 700px;
+  }
+  .firstCard,
+  .secondCard {
+    height: 330px;
+    width: 80%;
+  }
+  .cardText {
+    flex: 1;
+    padding-top: 100px;
+  }
+  .cardText p {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+  .cardText .title,
+  .cardText:last-child {
+    font-size: 1.3rem;
+  }
+  .buyNow {
+    height: 100px;
+    gap: 13px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  .buyNow .row {
+    padding: 0 6%;
+  }
+  /*btns */
+  .nav-btns a,
+  .banner-btn a,
+  .buy-btns a,
+  .promo-btn a,
+  .story-btn a,
+  .signUp-btn a,
+  .kn-btn a {
+    font-size: 0.7rem;
+    font-weight: 200;
+    padding: 5px 8px;
+  }
+  .buyNow p,
+  .klarna {
+    margin-top: 8px;
+    padding-right: 6%;
+    font-size: 0.8rem;
+  }
+  .buyNow p span,
+  .klarna span {
+    font-size: 0.9rem;
+  }
+  .promoSection {
+    margin-top: 100px;
+    padding: 0 0;
+    gap: 100px;
+    height: 1100px;
+  }
+  .promoTitle {
+    height: auto;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+  .promoTitle .smallText {
+    font-size: 0.8rem;
+    font-weight: 300;
+    white-space: nowrap;
+  }
+  .preciseDetail {
+    height: 100%;
+    background: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+  .preciseText p {
+    margin-bottom: 20px;
+  }
+  .preciseText .bundle {
+    margin-bottom: 15px;
+  }
+  .preciseText ul li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  .otherPart {
+    margin-top: 8px;
+  }
+  .seeAll {
+    margin-top: 250px;
+  }
+
+  .studentStoriesDiv {
+    gap: 7px;
+  }
+
+  .ilc-details {
+    gap: 30px;
+    margin-top: -60px;
+  }
+  .ilc-details .line-box {
+    flex-basis: 100%;
+  }
+  .line-box p {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    line-height: 1.8em;
+    width: 70%;
+    text-align: left;
+  }
+
+  .startJourneyDiv {
+    height: 270px;
+    gap: 0px;
+  }
+  .startJourneyDiv p {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .startJourneyDiv span {
+    font-size: 0.7rem;
+  }
+  .signUp-btn {
+    margin-top: 10px;
+  }
+  hr {
+    margin-top: 60px;
+  }
+
+  .contactDiv {
+    padding-top: 20px;
+    width: 90%;
+    gap: 5px;
+  }
+  .contactDetails {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactDetails .detail {
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+  .contactDetails .detail a {
+    font-size: 0.8rem;
+    margin-left: 5%;
+  }
+  .contact-icons {
+    margin-left: 5%;
+    font-size: 0.8rem;
+  }
+  .footerDiv {
+    white-space: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    line-height: 1em;
+    padding: 8px 0;
+  }
+  .footerDiv p:last-child {
+    margin-top: 12px;
+  }
+  .footerDiv p {
+    font-size: 0.7rem;
+  }
+  .lastHr {
+    margin: 0 0;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .firstCard,
+  .secondCard {
+    height: 230px;
+    width: 80%;
+  }
+  .cardText {
+    flex: 1;
+    padding-top: 30px;
+  }
+  .cardText p {
+    font-size: 0.6rem;
+    margin-top: 10px;
+  }
+  .cardText .title,
+  .cardText:last-child {
+    font-size: 1rem;
+  }
+
+  .buyNow {
+    height: 100px;
+    gap: 13px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  .buyNow .row {
+    padding: 0 6%;
+  }
+  /*btns */
+  .nav-btns a,
+  .banner-btn a,
+  .buy-btns a,
+  .promo-btn a,
+  .story-btn a,
+  .signUp-btn a,
+  .kn-btn a {
+    font-size: 0.7rem;
+    font-weight: 200;
+    padding: 5px 8px;
+  }
+  .buyNow p,
+  .klarna {
+    margin-top: 8px;
+    padding-right: 6%;
+    font-size: 0.8rem;
+  }
+  .buyNow p span,
+  .klarna span {
+    font-size: 0.9rem;
+  }
+  .promoSection {
+    margin-top: 0px;
+    padding: 0 0;
+    height: 1100px;
+    gap: 160px;
+  }
+  .promoTitle {
+    height: auto;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+  .promoTitle .smallText {
+    font-size: 0.8rem;
+    font-weight: 300;
+    white-space: nowrap;
+  }
+  .preciseDetail {
+    height: 100%;
+    background: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+  .preciseText p {
+    margin-bottom: 20px;
+  }
+  .preciseText .bundle {
+    margin-bottom: 15px;
+  }
+  .preciseText ul li {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+  .otherPart {
+    margin-top: 8px;
+  }
+  .seeAll {
+    margin-top: 250px;
+  }
+  .industryLeading-courses {
+    margin-top: 60px;
+  }
+  .studentStoriesDiv {
+    gap: 7px;
+  }
+
+  .ilc-details {
+    gap: 30px;
+    margin-top: -60px;
+  }
+  .ilc-details .line-box {
+    flex-basis: 100%;
+  }
+  .line-box p {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    line-height: 1.8em;
+    width: 70%;
+    text-align: left;
+  }
+
+  .startJourneyDiv {
+    height: 270px;
+    gap: 0px;
+  }
+  .startJourneyDiv p {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .startJourneyDiv span {
+    font-size: 0.7rem;
+  }
+  .signUp-btn {
+    margin-top: 10px;
+  }
+  hr {
+    margin-top: 60px;
+  }
+
+  .contactDiv {
+    padding-top: 20px;
+    width: 90%;
+    gap: 5px;
+  }
+  .contactDetails {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 6%;
+  }
+  .footerDiv {
+    white-space: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    line-height: 1em;
+    padding: 8px 0;
+  }
+  .footerDiv p:last-child {
+    margin-top: -30px;
+  }
+  .footerDiv p {
+    font-size: 0.7rem;
+  }
+  .lastHr {
+    margin: 0 0;
+    margin-top: 50px;
+  }
+}
